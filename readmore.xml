@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+    <name>Read more link after article</name>
+    <author>Vladimir Chmil</author>
+    <creationDate>2016</creationDate>
+    <copyright>none</copyright>
+    <license>MIT</license>
+    <authorEmail>vladimir.chmil@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>0.1</version>
+    <description>Displays read more link after article with text fade</description>
+
+    <files>
+        <filename plugin="readmore">readmore.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic">
+                <field name="template" type="text"
+                       default="klumbariy"
+                       description="Шаблон, для которого используется данный плагин"
+                       label="Шаблон"
+                       size="5"
+                />
+
+                <field name="divclass" type="text"
+                       default="article-box"
+                       description="Класс css div, в котором находится текст статьи"
+                       label="CSS-класс div статьи"
+                       size="5"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
